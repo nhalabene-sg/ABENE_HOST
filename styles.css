@@ -208,3 +208,169 @@
 .report-search-heading{margin:8px 18px;font-size:12px;font-weight:normal;color:#333}
 @media(max-width:1100px){.report-folder-grid{grid-template-columns:repeat(3,minmax(180px,1fr))}.report-file-grid{grid-template-columns:repeat(2,minmax(200px,1fr))}}
 @media(max-width:760px){.report-folder-grid,.ssrs-param-grid,.report-file-grid{grid-template-columns:1fr}.ssrs-params{grid-template-columns:1fr}.ssrs-run{border-left:0;padding-left:0;margin-left:0}}
+
+/* --- SSRS result viewer Host alignment 2026-09-28 Exibir --- */
+.ssrs-report-toolbar{display:flex;align-items:center;gap:3px;padding:3px 8px;margin:0 14px;background:#e8eaec;border:1px solid #c8c8c8;border-top:0;flex-wrap:wrap;min-height:30px}
+.ssrs-report-toolbar button{height:24px;min-width:26px;border:1px solid #9aa3aa;background:linear-gradient(#fafafa,#e6e6e6);cursor:pointer;font:11px Arial;color:#222;padding:0 6px}
+.ssrs-report-toolbar button:disabled{opacity:.4;cursor:default}
+.ssrs-page-input{width:36px;height:22px;text-align:center;border:1px solid #aaa;font:11px Arial;background:#fff}
+.ssrs-page{font:11px Arial;color:#333;margin:0 4px 0 2px}
+.ssrs-zoom-select{height:22px;border:1px solid #aaa;background:#fff;font:11px Arial;margin-left:4px}
+.ssrs-find{height:22px;width:110px;border:1px solid #aaa;margin-left:8px;background:#fff;font:11px Arial}
+.ssrs-find-link{border:0!important;background:transparent!important;color:#06c!important;text-decoration:underline;cursor:pointer;font:11px Arial!important;min-width:0!important;padding:0 4px!important;height:auto!important}
+.ssrs-find-sep{color:#666;font:11px Arial;margin:0 2px}
+.ssrs-empty-preview{min-height:260px;display:flex;align-items:center;justify-content:center;color:#555;padding:30px;background:#fff;margin:0 14px;border:1px solid #c8c8c8;border-top:0}
+.ssrs-loading-hint{text-align:center;line-height:1.5;font:12px Arial;border:1px solid #ccc;background:#fff;padding:18px 22px}
+.ssrs-loading-box{text-align:center;font:12px Arial;border:1px solid #bbb;background:#fff;padding:16px 28px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.ssrs-spinner{width:14px;height:14px;border:2px solid #ccc;border-top-color:#333;border-radius:50%;margin:0 auto 8px;animation:ssrs-spin .7s linear infinite}
+@keyframes ssrs-spin{to{transform:rotate(360deg)}}
+.ssrs-cancel-link{display:inline-block;margin-top:8px;border:0;background:none;color:#06c;text-decoration:underline;cursor:pointer;font:12px Arial}
+.ssrs-paper{padding:14px 18px 24px;background:#fff;margin:0 14px 8px;border:1px solid #c8c8c8;border-top:0;min-height:280px;font:12px Arial;color:#222}
+.ssrs-paper-head{display:flex;justify-content:space-between;gap:16px;margin-bottom:10px}
+.ssrs-paper-left h2{margin:0 0 6px;font-size:16px;font-weight:bold;color:#111}
+.ssrs-paper-left .ssrs-meta{margin:0;color:#333;font-size:11px;line-height:1.45}
+.ssrs-paper-right{text-align:right;font-size:10px;color:#444;line-height:1.4;white-space:nowrap}
+.ssrs-grid{width:100%;border-collapse:collapse;font:11px Arial;margin-top:4px}
+.ssrs-grid thead th{background:#6b6b6b;color:#fff;font-weight:bold;text-align:left;padding:4px 8px;border:1px solid #5a5a5a}
+.ssrs-grid tbody td{padding:3px 8px;border:1px solid #ddd;background:#fff}
+.ssrs-grid tbody tr:nth-child(even) td{background:#f7f7f7}
+.ssrs-total{margin:8px 0 0;font:11px Arial;font-weight:bold}
+.ssrs-paper-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:8px;border-top:1px solid #ddd;font:10px Arial;color:#555}
+.ssrs-brand{font-weight:bold;color:#333}
+.ssrs-page-foot{margin-left:auto}
+.ssrs-demo-note{margin-top:10px;font-size:10px;color:#888}
+.ssrs-params{margin:10px 14px 0;background:#f7f7f7;border:1px solid #c8c8c8;display:grid;grid-template-columns:1fr auto;gap:8px;padding:10px 12px}
+.ssrs-exibir{height:auto;min-height:54px;min-width:120px;padding:8px 12px;border:1px solid #8a9096;background:linear-gradient(180deg,#f7f7f7,#d8d8d8);font:12px Arial;cursor:pointer;white-space:normal}
+.ssrs-exibir:hover{background:linear-gradient(180deg,#fff,#e8e8e8)}
+.ssrs-run{display:flex;align-items:stretch;padding-top:0;border-left:1px solid #ccc;padding-left:12px;margin-left:4px}
+
+
+/* —— Gestão de Quartos / Housekeeping (Host Mobile align) —— */
+.hk-shell{display:flex;min-height:520px;background:#1a1f24;color:#e8ecef;font-size:12px}
+.hk-side{width:200px;flex-shrink:0;background:#12161a;border-right:1px solid #2a3238;padding:10px 8px;display:flex;flex-direction:column;gap:4px}
+.hk-side-title{font-weight:700;font-size:13px;padding:6px 8px 10px;color:#f0f3f5}
+.hk-side-btn{text-align:left;background:#1e252b;border:1px solid #2f3940;color:#dce3e8;padding:8px 10px;border-radius:4px;cursor:pointer}
+.hk-side-btn.active{background:#2a5a3a;border-color:#3d7a4e;color:#fff}
+.hk-side-sub{display:flex;flex-direction:column;gap:2px;margin:8px 0;padding-left:4px}
+.hk-side-link{text-align:left;background:transparent;border:0;color:#9aa7b0;padding:6px 8px;cursor:pointer;border-radius:3px;font-size:11px}
+.hk-side-link.active,.hk-side-link:hover{background:#243038;color:#fff}
+.hk-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:10px;color:#9aa7b0;padding:8px 4px;margin-top:auto}
+.hk-leg{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:2px}
+.hk-leg.limpo{background:#3a9b5c}.hk-leg.sujo{background:#8b5a2b}.hk-leg.manut{background:#6b7280}
+.hk-side-note{font-size:9px;color:#6b757c;padding:4px}
+.hk-main{flex:1;display:flex;flex-direction:column;min-width:0;background:#1e2429}
+.hk-topbar{display:flex;align-items:center;gap:8px;padding:6px 10px;background:#161b20;border-bottom:1px solid #2a3238}
+.hk-icons{display:flex;gap:6px;align-items:center}
+.hk-ico{opacity:.7;font-size:14px}.hk-ico.on{opacity:1;filter:drop-shadow(0 0 2px #c9a227)}
+.hk-fechar{margin-left:auto;background:#c0392b;color:#fff;border:0;padding:6px 14px;border-radius:4px;font-weight:700;cursor:pointer}
+.hk-fechar:hover{background:#e74c3c}
+.hk-filters{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;padding:8px 10px;background:#222930;border-bottom:1px solid #2a3238}
+.hk-filters label{display:flex;flex-direction:column;gap:2px;font-size:10px;color:#9aa7b0}
+.hk-filters select{background:#12161a;color:#e8ecef;border:1px solid #3a454d;border-radius:3px;padding:4px 6px;min-width:88px}
+.hk-search{background:#c9a227;border:0;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;align-self:flex-end}
+.hk-tabs{display:flex;align-items:center;gap:4px;padding:6px 10px;background:#1a2026;border-bottom:1px solid #2a3238;flex-wrap:wrap}
+.hk-tab{background:#2a3238;border:1px solid #3a454d;color:#c5ced4;padding:5px 10px;border-radius:3px;cursor:pointer;font-size:11px}
+.hk-tab small{opacity:.75;margin-left:4px}
+.hk-tab.active{background:#c9a227;color:#1a1a1a;border-color:#a8861a;font-weight:700}
+.hk-tab-select{background:#2a3238;color:#c5ced4;border:1px solid #3a454d;padding:4px 6px;border-radius:3px}
+.hk-view{background:#2a3238;border:1px solid #3a454d;color:#c5ced4;padding:5px 10px;border-radius:3px;cursor:pointer}
+.hk-view.active{background:#3d4a54;color:#fff;font-weight:600}
+.hk-panel{flex:1;overflow:auto;padding:8px 10px}
+.hk-andar{margin-bottom:10px}
+.hk-andar-head{background:#2c343c;color:#dce3e8;padding:4px 8px;font-weight:600;border-radius:3px 3px 0 0;font-size:11px}
+.hk-andar-count{opacity:.6;font-weight:400}
+.hk-andar-grid{display:flex;flex-wrap:wrap;gap:6px;padding:8px;background:#181d22;border:1px solid #2c343c;border-top:0;border-radius:0 0 3px 3px}
+.hk-tile{display:inline-flex;align-items:center;justify-content:space-between;min-width:72px;height:36px;padding:0 8px;border:0;border-radius:3px;cursor:pointer;color:#fff;font-weight:700;font-size:13px}
+.hk-tile.limpo{background:#3a9b5c}.hk-tile.sujo{background:#8b5a2b}.hk-tile.manut{background:#6b7280}
+.hk-tile:hover{filter:brightness(1.08);outline:1px solid #fff3}
+.hk-tile .hk-occ{font-size:11px;opacity:.9;margin-left:6px}
+.hk-badge{display:inline-block;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700}
+.hk-badge.ok{background:#3a9b5c;color:#fff}.hk-badge.dirty{background:#8b5a2b;color:#fff}
+.hk-detail-grid .row-limpo td:nth-child(3){color:#3a9b5c;font-weight:600}
+.hk-detail-grid .row-sujo td:nth-child(3){color:#c47a3a;font-weight:600}
+.hk-info-card{background:#181d22;border:1px solid #2c343c;border-radius:4px;padding:12px}
+.hk-info-card h3{margin:0 0 8px;font-size:14px;color:#f0f3f5}
+.hk-footer{display:flex;align-items:center;gap:12px;padding:6px 10px;background:#12161a;border-top:1px solid #2a3238;font-size:11px;color:#9aa7b0}
+.hk-counts{color:#c9a227}
+.gq-toolbar{display:none} /* legacy toolbar superseded by hk-shell when present */
+.window-content:has(.hk-shell){padding:0;overflow:hidden}
+.app-window:has(.hk-shell) .window-toolbar{display:none}
+
+
+/* Relatórios Exibir — combo EMPTY alinhado Host (2026-09-28) */
+.ssrs-combo-empty .ssrs-loading-hint {
+  color: #555;
+  border: 1px dashed #c8c8c8;
+  background: #fafafa;
+  padding: 18px 16px;
+  margin: 12px 8px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.ssrs-combo-empty .ssrs-loading-hint small { color: #777; }
+
+/* === Reserva Host alignment 2026-09-29 (additive, fictive demo) === */
+.host-adv-toggle{margin-left:8px;background:#eef1f3;border:1px solid #9aa3a9;padding:2px 8px;font-size:11px;cursor:pointer}
+.host-res-wrap{position:relative;min-height:180px}
+.host-res-empty{padding:24px;text-align:center;color:#444;font-size:13px;background:#f7f7f7;border:1px dashed #bbb;margin:8px}
+.host-res-grid.host-res-detalhado td{vertical-align:top;font-size:11px;padding:6px 8px}
+.host-res-grid.host-res-detalhado th{text-align:left}
+.td-hotel{width:56px}
+.hotel-thumb{width:48px;height:36px;background:linear-gradient(#cfd6db,#9aa7b0);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:bold;border-radius:2px}
+.td-acoes{width:78px}
+.host-acoes-demo{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;max-width:72px}
+.host-acoes-demo .ha{display:inline-flex;width:20px;height:20px;align-items:center;justify-content:center;border-radius:50%;background:#3a4147;color:#fff;font-size:10px;opacity:.85;user-select:none;pointer-events:none}
+.host-acoes-demo .ha.ok{background:#2e7d32}
+.host-acoes-demo .ha.stop{background:#c62828}
+.host-resumo .hr-id button{background:none;border:0;color:#0b57d0;font-weight:700;cursor:pointer;padding:0;font-size:12px}
+.host-resumo .hr-meta{color:#666;font-size:10px}
+.host-badge{display:inline-block;padding:1px 8px;border-radius:10px;font-size:10px;font-weight:700;margin:3px 0}
+.badge-normal{background:#7cb342;color:#102000}
+.badge-opcao{background:#fbc02d;color:#3e2723}
+.badge-out{background:#90a4ae;color:#102027}
+.badge-cancel{background:#e57373;color:#3b0000}
+.hr-dates .ci{color:#2e7d32;font-weight:600}
+.hr-dates .co{color:#c62828;font-weight:600}
+.hr-cat{color:#333;margin-top:2px}
+.hr-amt{font-weight:700;font-size:12px;margin-top:2px}
+.host-room-pill{display:inline-block;background:#43a047;color:#fff;padding:1px 6px;border-radius:3px;font-weight:700;margin:2px 0}
+.host-room-none{color:#888;font-style:italic}
+.he-name{font-weight:700}
+.he-src,.he-grp{color:#555;font-size:10px}
+.host-info .hi-nota{color:#5d4037;font-size:10px;margin-top:2px}
+.host-pag .hp-bal{font-weight:700}
+.res-date-row label.res-check{min-width:auto}
+.host-pager-bar .pager-count{margin-left:auto;color:#333;font-size:11px}
+.res-check{display:flex;align-items:center;gap:6px;font-size:11px;margin:3px 0;color:#3a444c}
+.res-check.inline{display:inline-flex;margin-right:6px}
+.host-radio-row{display:flex;gap:14px;margin:4px 0;font-size:11px}
+/* --- Estado Hotel alignment 2026-09-29: detail VipCode + empty hint --- */
+.status-detail-grid th:last-child,.status-detail-grid td:last-child{min-width:52px}
+.status-toolbar .status-date-label input[type=date]{min-width:118px}
+.status-summary .sec-head{letter-spacing:0.2px}
+.status-results .status-detail-title{display:flex;align-items:center;justify-content:space-between}
+/* FUNÇÕES panel / fiche demo — 2026-09-29 */
+.host-fiche-window{width:min(1100px,96vw);max-height:92vh;display:flex;flex-direction:column;background:#1a222b;color:#e8ecef;border:1px solid #4a5560;box-shadow:0 12px 40px #0008}
+.host-fiche-summary{padding:8px 12px;background:#24303a;border-bottom:1px solid #3a4650;font-size:11px;display:grid;gap:3px}
+.host-fiche-tabs{background:#1e2830}
+.host-fiche-body{flex:1;overflow:auto;background:#f4f5f6;color:#1d2731;min-height:280px}
+.host-fiche-placeholder{padding:16px}
+.funcoes-panel{padding:10px 12px}
+.funcoes-note{margin:0 0 8px;font-size:10px;color:#6f7a84}
+.funcoes-grid{display:grid;grid-template-columns:repeat(5,minmax(140px,1fr));gap:10px}
+.funcoes-col h4{margin:0 0 6px;font-size:11px;color:#3a4650;font-weight:700;border-bottom:1px solid #c9cdd1;padding-bottom:3px}
+.funcoes-cmd{display:flex;align-items:center;gap:8px;width:100%;margin:0 0 5px;padding:7px 8px;background:linear-gradient(#3a424a,#2a3138);border:1px solid #1a1f24;color:#f2f4f6;border-radius:3px;cursor:pointer;text-align:left;font-size:11px}
+.funcoes-cmd:hover{background:linear-gradient(#4a5560,#343c45);border-color:#75a8d4}
+.funcoes-cmd .fc-ico{width:18px;text-align:center;opacity:.9}
+.funcoes-dialog{width:min(920px,94vw);max-height:88vh;display:flex;flex-direction:column;background:#f3f4f5;border:1px solid #515960;box-shadow:0 12px 42px #0007}
+.funcoes-dlg-head{padding:8px 11px;background:linear-gradient(#4c5054,#32383d);color:#fff;font-size:12px;font-weight:bold;display:flex;justify-content:space-between;align-items:center}
+.funcoes-dlg-head button{border:0;background:transparent;color:#fff;cursor:pointer;font-size:16px}
+.funcoes-dlg-body{padding:12px;overflow:auto;flex:1}
+.funcoes-dlg-foot{padding:8px 11px;border-top:1px solid #c8cdd1;display:flex;align-items:center;gap:8px;background:#e6e8ea}
+.funcoes-table{font-size:11px}
+.funcoes-totals{display:flex;justify-content:flex-end;gap:18px;margin-top:8px;font-weight:700;font-size:12px}
+.funcoes-badge{display:inline-block;margin-top:3px;background:#c0392b;color:#fff;padding:1px 6px;border-radius:2px;font-size:9px}
+.funcoes-dlg-actions{display:flex;gap:6px;align-items:center;margin-top:10px;flex-wrap:wrap}
+.funcoes-optlist{margin:8px 0 0 18px;font-size:11px;color:#515960}
+.funcoes-dlg-bg{z-index:110}
+@media (max-width:900px){.funcoes-grid{grid-template-columns:repeat(2,1fr)}}
