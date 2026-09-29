@@ -374,3 +374,7 @@
 .funcoes-optlist{margin:8px 0 0 18px;font-size:11px;color:#515960}
 .funcoes-dlg-bg{z-index:110}
 @media (max-width:900px){.funcoes-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* eye opens fiche - additive 2026-09-29 design restore */
+.host-acoes-demo .ha-eye{pointer-events:auto!important;border:0;cursor:pointer;font:inherit;padding:0;line-height:1;opacity:1}
+.host-acoes-demo .ha-eye:hover{outline:1px solid #75a8d4;background:#4a5560}
